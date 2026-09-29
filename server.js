@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // Frontend UI එක පෙන්වීම
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 const PORT = process.env.PORT || 3000;
 const BOT_NAME = "MR GAVEE MINI BOT";
